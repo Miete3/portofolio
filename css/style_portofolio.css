@@ -1,10 +1,30 @@
 .debut{
-    background-color: var(--couleur-bleu); 
     padding: 60px 20px;
     font-family: "Figtree", sans-serif;
   
 }
 
+.bouton-retour {
+
+  background-color: transparent;
+  color: var(--couleur-rouge);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.5s ease;  
+  background-color: transparent;
+}
+.bouton-retour .material-symbols-outlined {
+    font-size: 3rem; 
+    margin-right: 500rem; 
+    position: fixed; 
+    transition: all 0.5s linear;
+     
+}   
+
+.bouton-retour:hover {
+  color: #ff9999; 
+
+}
 
 :root{
     --couleur-rouge : #ff4c4c; 
@@ -26,6 +46,7 @@ body{
 }
 
 
+
 .debut, .introduction{
     text-align: center;
     font-size: 1.1rem;
@@ -34,17 +55,21 @@ body{
 } 
 
 
-.projet{
+
+.projet{ 
+   
+    width: 75%;
     background-color: var(--couleur-bleu-clair);
     border-left: 4px solid var(--couleur-rouge); 
     padding: 20px;
+    margin-left: 155px;
     margin-bottom: 30px; 
     border-radius: 8px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.7s ease; 
 }
 
 .projet:hover{
-    transform: scale(1.02);
+    transform: scale(1.02); 
 }
 
 .projet h3{
@@ -70,4 +95,13 @@ body{
 a{
     text-decoration: none; 
     color: var(--couleur-rouge);
-}
+} 
+
+ @media (max-width: 800px) {
+    
+    .projet{
+        width: 80%;
+        margin: 30px 60px ; 
+
+    } 
+} 

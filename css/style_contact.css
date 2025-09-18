@@ -1,10 +1,33 @@
 .contact {
-  background-color: #0a0f2c;
   color: #ffffff;
   padding: 60px 20px;
     font-family: "Figtree", sans-serif;
   text-align: center;
 }
+
+
+.bouton-retour {
+
+  background-color: transparent;
+  color: #ff4c4c;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.5s ease;  
+  background-color: transparent;
+}
+.bouton-retour .material-symbols-outlined {
+    font-size: 3rem; 
+    margin-right: 500rem; 
+    position: fixed; 
+    transition: all 0.5s linear;
+     
+}   
+
+.bouton-retour:hover {
+  color: #ff9999; 
+
+}
+
 body{
     background-color: #0a0f2c;
 }
